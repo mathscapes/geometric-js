@@ -1,0 +1,27 @@
+{
+  "name": "@mathscapes/geometric",
+  "author": "mathscapes",
+  "version": "0.1.0",
+  "description": "Make math shapes and curves",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathscapes/geometric-js.git"
+  },
+  "keywords": [
+    "curves",
+    "generative",
+    "geometry",
+    "maths",
+    "pattern",
+    "shapes"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathscapes/geometric-js/issues"
+  },
+  "homepage": "https://github.com/mathscapes/geometric-js#readme"
+}
