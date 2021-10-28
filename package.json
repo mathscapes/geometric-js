@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/mathscapes/geometric-js/issues"
   },
-  "homepage": "https://github.com/mathscapes/geometric-js#readme"
+  "homepage": "https://github.com/mathscapes/geometric-js#readme",
+  "dependencies": {
+    "@luncheon/simplify-svg-path": "^0.1.4"
+  }
 }

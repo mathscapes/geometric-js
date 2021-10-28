@@ -3,6 +3,7 @@ npm i @mathscapes/geometric
 
 import * as Geo from '@mathscapes/geometric';
 
+// Legacy capabilities
 var svgdata =   Geo.PolarRose(a, n, d, gamma, c) |
                 Geo.ArchSpiral(a, b, t) | 
                 Geo.LogSpiral(a, k, t) |

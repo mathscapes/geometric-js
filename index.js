@@ -1,3 +1,4 @@
+import { plot } from './draw.js';
 
 function radian(deg) {
     return deg * Math.PI / 180;
@@ -7,66 +8,48 @@ function PolarRose(a, n, d, gamma, c) {
     //convert degrees to radians
     gamma = radian(gamma);
 
-    var data = "";
+    var pointList = [];
 
     var k = n / d;
 
-    for (let i = 0; i < d * (2 * Math.PI); i += 0.005) {
+    for (let i = 0; i <= d * (2 * Math.PI); i += 2*Math.PI/36) {
         let r = a * Math.cos(k * i + gamma) + c;
         let x = r * Math.cos(i);
         let y = r * Math.sin(i);
-        let buf = x + " " + y;
-        if (data == "") {
-            data += "M " + buf + " ";
-        } else {
-            data += "L " + buf + " ";
-        }
+        pointList.push([x, y]);
     }
-    data += "Z";
-    return data;
+    return pointList;
 }
 
 function ArchSpiral(a, b, t) {
-    var data = "";
+    var pointList = [];
 
-    for (let i = 0; i <= t * 2 * Math.PI; i += 0.01) {
+    for (let i = 0; i <= t * 2 * Math.PI; i += 2*Math.PI/36) {
         let r = a + b * i;
         let x = r * Math.cos(i);
         let y = r * Math.sin(i);
-        let buf = x + " " + y;
-        if (data == "") {
-            data += "M " + buf + " ";
-        } else {
-            data += "L " + buf + " ";
-        }
+        pointList.push([x, y]);
     }
-    data += "Z";
-    return data;
+    return pointList;
 }
 
 function LogSpiral(a, k, t) {
-    var data = "";
+    var pointList = [];
 
     for (let i = 0; i <= t * 2 * Math.PI; i += 0.01) {
         let r = a * Math.exp(k * i);
         let x = r * Math.cos(i);
         let y = r * Math.sin(i);
 
-        let buf = x + " " + y;
-        if (data == "") {
-            data += "M " + buf + " ";
-        } else {
-            data += "L " + buf + " ";
-        }
+        pointList.push([x, y]);
     }
-    data += "Z";
-    return vector;
+
+    return pointList;
 }
 
 function TrigFunc(wave, a, f, phi, cycles) {
-    let vector = figma.createVector();
+    var pointList = [];
 
-    var data = "";
     let x = 0;
     let xoff = (1 / f);
 
@@ -85,75 +68,50 @@ function TrigFunc(wave, a, f, phi, cycles) {
                 break;
         }
 
-        let buf = x + " " + y;
-
-        if (data == "") {
-            data += "M " + buf + " ";
-        } else {
-            data += "L " + buf + " ";
-        }
+        pointList.push([x, y]);
 
         x += xoff;
     }
 
-    data += "Z";
-
-    return data;
+    return pointList;
 }
 
 function Superellipse(n, a, b) {
-    var data = "";
+    var pointList = [];
 
     for (let i = 0; i <= 2 * Math.PI; i += 0.01) {
         let x = Math.sign(Math.cos(i)) * a * Math.pow(Math.abs(Math.cos(i)), 2 / n);
         let y = Math.sign(Math.sin(i)) * b * Math.pow(Math.abs(Math.sin(i)), 2 / n);
 
-        let buf = x + " " + y;
-        if (data == "") {
-            data += "M " + buf + " ";
-        } else {
-            data += "L " + buf + " ";
-        }
+        pointList.push([x, y]);
     }
 
-    data += "Z";
-    return data;
+    return pointList;
 }
 
 function Polygon(n, m) {
-    var data = "";
+    var pointList = [];
 
     for (let i = 0; i <= 2 * Math.PI; i += 2 * Math.PI / n) {
         let x = m * Math.cos(i);
         let y = m * Math.sin(i);
-        let buf = x + " " + y;
-        if (data == "") {
-            data += "M " + buf + " ";
-        } else {
-            data += "L " + buf + " ";
-        }
+        pointList.push([x, y]);
     }
-    data += "Z";
-    return data;
+
+    return pointList;
 }
 
 function Astroid(a) {
-    var data = "";
+    var pointList = [];
 
     for (let i = 0; i <= 2 * Math.PI; i += 0.01) {
 
         let x = a * Math.pow(Math.cos(i), 3);
         let y = a * Math.pow(Math.sin(i), 3);
-        let buf = x + " " + y;
-        if (data == "") {
-            data += "M " + buf + " ";
-        } else {
-            data += "L " + buf + " ";
-        }
+        pointList.push([x, y]);
     }
 
-    data += "Z";
-    return data;
+    return pointList;
 }
 
 export {radian, PolarRose, ArchSpiral, LogSpiral, TrigFunc, Superellipse, Polygon, Astroid};
