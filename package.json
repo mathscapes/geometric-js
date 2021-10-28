@@ -1,7 +1,7 @@
 {
   "name": "@mathscapes/geometric",
   "author": "mathscapes",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Make math shapes and curves",
   "main": "index.js",
   "scripts": {

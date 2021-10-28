@@ -1,3 +1,4 @@
+```
 npm i @mathscapes/geometric 
 
 import * as Geo from '@mathscapes/geometric';
@@ -9,3 +10,4 @@ var svgdata =   Geo.PolarRose(a, n, d, gamma, c) |
                 Superellipse(n, a, b) | 
                 Polygon(n, m) | 
                 Astroid(a)
+```
