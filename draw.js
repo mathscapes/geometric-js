@@ -5,4 +5,4 @@ function plot(pointList) {
 }
 
 
-export { Point, Line, plot };
+export { plot };

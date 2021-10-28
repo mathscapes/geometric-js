@@ -1,4 +1,5 @@
 import { plot } from './draw.js';
+import shapeGroups from './shapes.config.js';
 
 function radian(deg) {
     return deg * Math.PI / 180;
@@ -114,4 +115,5 @@ function Astroid(a) {
     return pointList;
 }
 
+console.log(shapeGroups);
 export {radian, PolarRose, ArchSpiral, LogSpiral, TrigFunc, Superellipse, Polygon, Astroid};
