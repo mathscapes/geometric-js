@@ -6,8 +6,8 @@ import * as Geo from '@mathscapes/geometric';
 var svgdata =   Geo.PolarRose(a, n, d, gamma, c) |
                 Geo.ArchSpiral(a, b, t) | 
                 Geo.LogSpiral(a, k, t) |
-                TrigFunc(wave, a, f, phi, cycles) | 
-                Superellipse(n, a, b) | 
-                Polygon(n, m) | 
-                Astroid(a)
+                Geo.TrigFunc(wave, a, f, phi, cycles) | 
+                Geo.Superellipse(n, a, b) | 
+                Geo.Polygon(n, m) | 
+                Geo.Astroid(a)
 ```
