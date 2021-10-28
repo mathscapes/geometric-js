@@ -116,4 +116,4 @@ function Astroid(a) {
 }
 
 console.log(shapeGroups);
-export {radian, PolarRose, ArchSpiral, LogSpiral, TrigFunc, Superellipse, Polygon, Astroid};
+export {radian, PolarRose, ArchSpiral, LogSpiral, TrigFunc, Superellipse, Polygon, Astroid, shapeGroups, plot};
