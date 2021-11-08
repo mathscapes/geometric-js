@@ -13,7 +13,7 @@ function PolarRose(a, n, d, gamma, c) {
 
     var k = n / d;
 
-    for (let i = 0; i <= d * (2 * Math.PI); i += 2*Math.PI/36) {
+    for (let i = 0; i <= d * (2 * Math.PI); i += 2*Math.PI/72) {
         let r = a * Math.cos(k * i + gamma) + c;
         let x = r * Math.cos(i);
         let y = r * Math.sin(i);
@@ -115,5 +115,6 @@ function Astroid(a) {
     return pointList;
 }
 
-console.log(shapeGroups);
+// console.log(plot(PolarRose ( 150, 32, 5,  0, 0 )));
+// console.log(shapeGroups);
 export {radian, PolarRose, ArchSpiral, LogSpiral, TrigFunc, Superellipse, Polygon, Astroid, shapeGroups, plot};

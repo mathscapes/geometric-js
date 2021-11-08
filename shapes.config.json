@@ -1,0 +1,826 @@
+{
+    "Config": [
+        {
+            "name": "Polar rose",
+            "slug": "polar-rose",
+            "hint": " ",
+            "shapes": [
+                {
+                    "shape": "Polar rose",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "Amplitude",
+                                "symbol": "a",
+                                "label": "Amplitude"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 16,
+                                "max": 128,
+                                "step": 1,
+                                "default": 64
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Cycles",
+                                "symbol": "n",
+                                "label": "Cycles"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 32,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Time period",
+                                "symbol": "d",
+                                "label": "Time period"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 32,
+                                "step": 1,
+                                "default": 4
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Offset",
+                                "symbol": "c",
+                                "label": "Offset"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 128,
+                                "step": 1,
+                                "default": 0
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Resolution",
+                                "symbol": "r",
+                                "label": "Resolution"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 72,
+                                "step": 1,
+                                "default": 24
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Trigonometric Functions",
+            "slug": "trig-func",
+            "hint": "A sinusoid plotted in polar coordinates",
+            "shapes": [
+                {
+                    "shape": "Sine",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "Amplitude",
+                                "symbol": "a",
+                                "label": "Amplitude"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 16,
+                                "max": 64,
+                                "step": 1,
+                                "default": 24
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Time period",
+                                "symbol": "t",
+                                "label": "Time period"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 64,
+                                "step": 1,
+                                "default": 8
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Cycles",
+                                "symbol": "c",
+                                "label": "Cycles"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 64,
+                                "step": 1,
+                                "default": 8
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Resolution",
+                                "symbol": "r",
+                                "label": "Resolution"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 72,
+                                "step": 1,
+                                "default": 24
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Cosine",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "Amplitude",
+                                "symbol": "a",
+                                "label": "Amplitude"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 16,
+                                "max": 64,
+                                "step": 1,
+                                "default": 24
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Time period",
+                                "symbol": "t",
+                                "label": "Time period"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 64,
+                                "step": 1,
+                                "default": 32
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Cycles",
+                                "symbol": "c",
+                                "label": "Cycles"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 64,
+                                "step": 1,
+                                "default": 8
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Resolution",
+                                "symbol": "r",
+                                "label": "Resolution"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 72,
+                                "step": 1,
+                                "default": 24
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Tangent",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "Amplitude",
+                                "symbol": "a",
+                                "label": "Amplitude"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 16,
+                                "max": 64,
+                                "step": 1,
+                                "default": 24
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Time period",
+                                "symbol": "t",
+                                "label": "Time period"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 64,
+                                "step": 1,
+                                "default": 32
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Cycles",
+                                "symbol": "c",
+                                "label": "Cycles"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 64,
+                                "step": 1,
+                                "default": 8
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Resolution",
+                                "symbol": "r",
+                                "label": "Resolution"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 72,
+                                "step": 1,
+                                "default": 24
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Polygon",
+            "slug": "polygon",
+            "hint": "A sinusoid plotted in polar coordinates",
+            "shapes": [
+                {
+                    "shape": "Polygon",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "Vertices count",
+                                "symbol": "n",
+                                "label": "n"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Median count",
+                                "symbol": "m",
+                                "label": "m"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spiral",
+            "slug": "spiral",
+            "hint": "Path of a point in a plane moving around a central point while continuously receding...",
+            "shapes": [
+                {
+                    "shape": "Archimedian",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "Turn factor",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Distance control",
+                                "symbol": "b",
+                                "label": "b"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Turns (in degrees)",
+                                "symbol": "t",
+                                "label": "t"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 360,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Logarithmic",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "k",
+                                "symbol": "k",
+                                "label": "k"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Turns (in degrees)",
+                                "symbol": "t",
+                                "label": "t"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 360,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Fermat",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "k",
+                                "symbol": "k",
+                                "label": "k"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Turns (in degrees)",
+                                "symbol": "t",
+                                "label": "t"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 360,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Doppler",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "k",
+                                "symbol": "k",
+                                "label": "k"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Turns (in degrees)",
+                                "symbol": "t",
+                                "label": "t"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 360,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Fibonacci",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "k",
+                                "symbol": "k",
+                                "label": "k"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Turns (in degrees)",
+                                "symbol": "t",
+                                "label": "t"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 360,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Golden",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "k",
+                                "symbol": "k",
+                                "label": "k"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Turns (in degrees)",
+                                "symbol": "t",
+                                "label": "t"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 360,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Euler",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "k",
+                                "symbol": "k",
+                                "label": "k"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Turns (in degrees)",
+                                "symbol": "t",
+                                "label": "t"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 360,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "shape": "Atzema",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "k",
+                                "symbol": "k",
+                                "label": "k"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "Turns (in degrees)",
+                                "symbol": "t",
+                                "label": "t"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 0,
+                                "max": 360,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Superellipse",
+            "slug": "superellipse",
+            "hint": "A sinusoid plotted in polar coordinates",
+            "shapes": [
+                {
+                    "shape": "Superellipse",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "n",
+                                "symbol": "n",
+                                "label": "n"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        },
+                        {
+                            "name": {
+                                "title": "b",
+                                "symbol": "b",
+                                "label": "b"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 1,
+                                "max": 500,
+                                "step": 1,
+                                "default": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Astroid",
+            "slug": "astroid",
+            "hint": "A sinusoid plotted in polar coordinates",
+            "shapes": [
+                {
+                    "shape": "Astroid",
+                    "fields": [
+                        {
+                            "name": {
+                                "title": "a",
+                                "symbol": "a",
+                                "label": "a"
+                            },
+                            "schema": {
+                                "type": "Integer",
+                                "input": "Slider",
+                                "min": 3,
+                                "max": 128,
+                                "step": 1,
+                                "default": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
